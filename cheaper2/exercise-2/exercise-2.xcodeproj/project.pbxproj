@@ -1,0 +1,10 @@
+		9192CD6C1A54F6B8008ECD57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9192CD6B1A54F6B8008ECD57 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9192CD661A54F6B8008ECD57 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
