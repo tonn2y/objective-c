@@ -25,6 +25,7 @@ int main(int argc, const char * argv[]) {
         [bComplex print];
         NSLog(@"=");
         
+        
         resultComplex = [aComplex add:bComplex];
         [resultComplex print];
 
