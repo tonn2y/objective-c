@@ -16,7 +16,7 @@
 
 @synthesize width, height;
 
--(void) setWidth:(int)w andHeight:(int) h
+-(void) setWidth:(float)w andHeight:(float) h
 {
     width = w;
     height = h;
@@ -32,12 +32,12 @@
     origin.y = pt.y;
 }
 
--(int) area
+-(float) area
 {
     return width * height;
 }
 
--(int) perimeter
+-(float) perimeter
 {
     return (width + height) * 2;
 }

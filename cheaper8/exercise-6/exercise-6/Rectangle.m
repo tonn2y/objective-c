@@ -16,7 +16,7 @@
 
 @synthesize width, height;
 
--(void) setWidth:(int)w andHeight:(int) h
+-(void) setWidth:(float)w andHeight:(float) h
 {
     width = w;
     height = h;
@@ -24,7 +24,6 @@
 
 -(void) setOrigin:(XYPoint *)pt
 {
-    //清单8-5B
     if (!origin) {
         origin = [[XYPoint alloc]init];
     }
@@ -32,12 +31,12 @@
     origin.y = pt.y;
 }
 
--(int) area
+-(float) area
 {
     return width * height;
 }
 
--(int) perimeter
+-(float) perimeter
 {
     return (width + height) * 2;
 }
@@ -45,6 +44,24 @@
 -(XYPoint *) origin
 {
     return origin;
+}
+
+-(void) translate:(XYPoint *)pt
+{
+    origin.x += pt.x;
+    origin.y += pt.y;
+}
+
+-(BOOL) containsPoint:(XYPoint *)aPoint
+{
+    BOOL isContains = NO;
+    if (origin) {
+        if ((aPoint.x >= origin.x && aPoint.x <= origin.x + width) &&
+            (aPoint.y >= origin.y && aPoint.y <= origin.y + width))  {
+            isContains = YES;
+        }
+    }
+    return isContains;
 }
 
 @end
