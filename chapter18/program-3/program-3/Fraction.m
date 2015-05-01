@@ -32,10 +32,10 @@
   denominator = d;
 }
 
--(id)copyWithZone:(NSZone *)zone {
-  Fraction *newFract = [[Fraction allocWithZone:zone] init];
-  [newFract setTo:numerator over:denominator];
-  return newFract;
+-(id) copyWithZone:(NSZone *)zone{
+    Fraction *newFract = [[Fraction allocWithZone:zone]init];
+    
+    [newFract setTo:numerator over:denominator];
+    return newFract;
 }
-
 @end
