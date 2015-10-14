@@ -1,6 +1,6 @@
 # objective-c
 The Objective-C programing 6th exercises
-````shcharp
+````csharp
  public static aa()
  {
  
